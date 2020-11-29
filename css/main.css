@@ -1,0 +1,47 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr 200px 100px 1fr;
+    margin: 20px;
+    height: 80vh;
+    align-self: center;
+}
+body > .tekstas {
+    display: inline-block;
+    width: 100%;
+    grid-column: 1/5;
+    font-size: 25px;
+    padding: 0 10%;
+    align-self: center;
+}
+.Rezultatai {
+    grid-column: 2/4;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    border: 2px solid;
+    padding: 10px;
+}
+    .Rezultatai > .container {
+        grid-column: 1/3;
+        text-align: center;
+        font-size: 50px;
+    }
+    .Rezultatai > .results {
+        font-size: 26px;
+        grid-column: 1/3;
+        display: grid;
+        margin: 10px 0;
+        grid-template-columns: 1fr 2fr;
+        border: 2px solid
+    }
+        .Rezultatai > .results > .uzduotis {
+            display: inline-block;
+            grid-column: 1/3;
+            align-self: center;
+            margin-left: 5px;
+        }
+        .Rezultatai > .results  > .kiek {
+            display: inline-block;
+            margin: 0 20px;
+            grid-column: 3/4;
+            align-self: center;
+        }

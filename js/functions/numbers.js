@@ -3,7 +3,7 @@ import { isNumber } from './digits.js';
  * Funkcija kuri skaicioja skaiciu kieki String'e
  * @param {string} str Priima string typo reiksme, patikrina a jame yra skaitmuo - jeigu yra prideda i tuscia LAIKINA stringa.
  * Jeigu laikinasSkaicius nera tuscias, supushina i masiva
- * @returns {number} Grazina masivo ilgi
+ * @returns {number} Grazina skaiciaus tipo reiksme -  masivo ilgi;
  */
 function countNum(str) {
     let masivas = [];

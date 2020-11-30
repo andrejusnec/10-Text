@@ -2,16 +2,20 @@ body{
     display: grid;
     grid-template-columns: 1fr 200px 100px 1fr;
     margin: 20px;
-    height: 80vh;
+    height: 90vh;
     align-self: center;
+    background-image: url(../white-triangle-369b8d2d.jpg);
+    background-size: cover;
 }
 body > .tekstas {
     display: inline-block;
-    width: 100%;
     grid-column: 1/5;
     font-size: 25px;
-    padding: 0 10%;
     align-self: center;
+    border: 2px solid;
+    width: 80%;
+    margin: 0 10%;
+    padding: 5px;
 }
 .Rezultatai {
     grid-column: 2/4;

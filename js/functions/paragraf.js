@@ -1,6 +1,6 @@
 /**
  * Paragrafo Paieskos funkcija
- * @param {Array[i]} symbol Priima stringo [i] elementa ir tikrina ar jis yra paragrafo pabaigos zenklas
+ * @param {string} symbol Priima stringo [i] elementa ir tikrina ar jis yra paragrafo pabaigos zenklas
  * @returns {boolean} Grazina tiesa jeigu randa paragrafo pabaigos zenklas
  */
 function checkParagraf(symbol) {

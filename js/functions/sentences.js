@@ -1,6 +1,6 @@
 /**
  * Sakinio Paieskos funkcija
- * @param {Array[i]} symbol Priima stringo [i] elementa ir tikrina ar jis yra sakinio pabaigos zenklas
+ * @param {string} symbol Priima stringo [i] elementa ir tikrina ar jis yra sakinio pabaigos zenklas
  * @returns {boolean} Grazina true jei symbol attinka sakinio pabaigos zenklui
  */
     function checkEnd(symbol) {

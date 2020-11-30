@@ -5,7 +5,13 @@ import { checkWord } from './word.js';
 import { isNumber } from './digits.js';
 import { countNum } from './numbers.js';
 import { checkSymbol } from './symbols.js';
-
+import { isStringOrEmpty } from '../validacija/validation.js'
+/**
+ * Funkcija kuri paskaicioja kiek yra kokiu elementu Tekste
+ * @param {string} str Priima String'a , naudodama kitas funkcijas paskaicioja  kiek yra raidziu,sakiniu,paragrafu,skaitmenu,zodziu,
+ * skaiciu ir simboliu.
+ * @returns {number} Grazina skaiciau tipo reiksmes
+ */
 function SpellingTest(str) {
     let raidziu = 0;
     let sakiniu = 0;
@@ -14,6 +20,10 @@ function SpellingTest(str) {
     let zodziu = checkWord(str);
     let skaiciu = countNum(str);
     let simboliu = 0;
+    //input validation
+    if(!isStringOrEmpty(str)){
+        return false;
+    }
     for (let i = 0; i < str.length; i++) {
         if (checkEnd(str[i])) {
             sakiniu++;
@@ -30,9 +40,8 @@ function SpellingTest(str) {
         if(checkSymbol(str[i])) {
             simboliu++;
         }
-        console.log(simboliu);
     }
-    console.log(simboliu);
+    console.log(zodziu);
     document.querySelector('.paragrafu').innerText = `${paragrafu}`;
     document.querySelector('.sakiniu').innerText = `${sakiniu}`;
     document.querySelector('.zodziu').innerText = `${zodziu}`;

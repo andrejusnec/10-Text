@@ -1,27 +1,17 @@
+/**
+ * Funkcija simboliams paskaicioti
+ * @param {string} symbol Gauna stringo[i] elementa ir tikrina ar jis sutampa su simboliu
+ * @returns {boolean} Grazina boolean tipo reiksme. Jei simbolis rastas, grazina True
+ */
 function checkSymbol(symbol) {
-    /*let masivas = [];*/
-    let simboliai = [' ', '-', '.', '*', '"', "'", '!', '?', ';', ':','\n' ,'$','%',')','(','/','\\', ','];
-    /*const simboliai = '" .)(,//|?!;-:';*/
-    /*let simbolis = '';*/
-    /*let counteris = 0;*/
-    /*for(let i = 0; i < str.lenght; i++) { */
-        let arSimbolis = simboliai.indexOf(symbol)
-        if(arSimbolis > -1) {
-            return true;
-        }/*
-        else {
-            if(simbolis != ''){
-                masivas.push(simbolis);
-                simbolis = '';
-            }
-        } */
-        else{
-            return false;
-        }
-    
+    let simboliai = [' ','-', '.', '*', '"', "'", '!', '?', ';', ':', '\n', '$', '%', ')', '(', '/', '\\', ','];
+    let arSimbolis = simboliai.indexOf(symbol)
+    if (arSimbolis > -1) {
+        return true;
+    }
+    else {
+        return false;
+    }
+
 }
 export { checkSymbol }
-
-
-// Tekstas, yra toks, koks! Tomas-bus anoks gal kada...
-// 
